@@ -1,0 +1,228 @@
+/*
+    Author: Yosra houas
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --violet: #BA7EFC;
+    --blue:#14badb;
+    --blue2:#52CBE3;
+    --viloetdark:#5F21A5 ;
+    --darkPink:#A409C3;
+    --darkblue:#5C0CFD;
+
+}
+
+body{
+    padding-top: 8em;
+    font-family: var(--sm-font);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+.icon_app{
+    width: 30px;
+}
+
+.text-danger{
+    color: var(--blue)!important;
+}
+.text_welcome{
+    border-radius: 25px;
+    background-color: rgb(0,0,0,0.4);
+    margin-bottom: 10%;
+}
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img{
+    width: 50px
+}
+
+.images{
+    width: 80px;
+}
+
+.navbar-brand span{
+    color: var(--blue)!important;
+    font-weight: bold;
+
+}
+
+.nav-link:hover{
+    color: var(--blue)!important;
+    font-weight: bold;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.footer span {
+    color: var(--blue);
+    text-transform: uppercase;
+    size: 24px;
+
+}
+
+h1{
+    margin-top: 10px;
+    padding: 30px;
+    text-align: center;
+
+}
+h1 span{
+    color: var(--blue);
+    text-transform: uppercase;
+}
+.page_inscription{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/back_pageInscription.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+}
+.form_inscription{
+    float:right;
+    margin:5%;
+    background-color: rgba(299,299,299,0.9);
+    padding: 40px 30px;
+    width: auto;
+    min-height: 20vh;
+}
+.form_trajet{
+    float:left;
+    margin:5%;
+    background-color: rgba(299,299,299,0.9);
+    padding: 40px 30px;
+    width: auto;
+    min-height: 20vh;
+}
+.form_maps{
+    float:right;
+    margin:5%;
+    background-color: rgba(299,299,299,0.9);
+    padding: 40px 30px;
+    width: auto;
+    min-height: 20vh;
+}
+#content {
+    max-height: 80vh;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+.listeTrajet {
+    max-height: 80vh;
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+.page_connexion{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/bg_connexion.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+}
+.form_connexion{
+    float: right;
+    margin:5%;
+    background-color: rgba(299,299,299,0.9);
+    padding: 40px 40px;
+    width: 400px;
+    min-height: 50vh;
+}
+.page_reservation {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page_reservation .container {
+    flex: 1;
+}
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #918f8f;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    outline: none;
+}
+
+/* Couleur du bouton radio coché */
+input[type="radio"]:checked {
+    background-color: #c90808;
+}
+
+.btn_app{
+    background-color: #13bfe1;
+    color: #f2f3f5;
+    float: right;
+}
+.btn_app:hover{
+    background-color:#f2f3f5;
+    color:#0fb0d0;
+    border: 2px solid #0fb0d0;
+}
+
+.btn_rech{
+    background-color: #c90808;
+    color: #f2f3f5;
+    float: right;
+}
+.btn_rech:hover{
+    background-color: #ffffff;
+    color: #c90808;
+    border: 2px solid #c90808;
+}
+
+@media (max-width: 767px) {
+    #content.scroll-active {
+        margin-bottom: 10px;
+    }
+}
+/*Media Queries*/
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+    .dropdown-item{
+        border-bottom: none;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .form-group.row-cols-2 > div[class^="col-"] {
+        flex-basis: 100% !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .form_connexion {
+        margin:10%;
+        margin-top: 25%;
+    }
+}
+
+
